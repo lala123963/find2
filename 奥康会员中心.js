@@ -1,6 +1,6 @@
 /**
  *
- * 奥康皮鞋
+ * 奥康会员中心
  *
  * 7-27		签到，积分查询
  *
@@ -14,7 +14,7 @@
 
  const { log } = require("console");
 
- const $ = new Env("奥康皮鞋");
+ const $ = new Env("奥康会员中心");
  const notify = $.isNode() ? require("./sendNotify") : "";
  const Notify = 0 		//0为关闭通知,1为打开通知,默认为1
  const debug = 0			//0为关闭调试,1为打开调试,默认为0
