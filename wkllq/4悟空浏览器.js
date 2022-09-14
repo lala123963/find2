@@ -31,7 +31,8 @@ module.exports = {"code":200,
 ///===========================================================
 ///更多号自己添加
 推荐
-cron: 0-59/15 0-1,6-15,19-23 * * * https://gitee.com/soy-tool/app-script/raw/master/app_wkllq.js
+cron: 0-59/15 0-1,6-15,19-23 * * *
+https://gitee.com/soy-tool/app-script/raw/master/app_wkllq.js
 */
 
 const $ = new Env('悟空浏览器');
