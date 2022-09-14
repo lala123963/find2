@@ -7,7 +7,7 @@
  变量格式：export ddgyCk='xxx@xxx '  多个账号用@或者换行分割
  定时：一天五次
 
- 
+ cron: 15 8,10,12,18,20 * * *
 
  可以自己抓User-Agent填到 UA 变量里面，或者懒得抓直接改脚本里面的uaNum也行
 
@@ -18,10 +18,10 @@
  https://minigame.zijieapi.com/ttgame/game_orchard_ecom/polling_info url script-request-header https://raw.githubusercontent.com/LinYuanovo/scripts/main/dygy.js
  [MITM]
  hostname = minigame.zijieapi.com
- cron：35 8,10,12,18,20 * * *
+
  */
 
-const $ = new Env('抖音果园');
+const $ = new Env('抖音抖抖果园');
 const notify = $.isNode() ? require('./sendNotify') : '';
 const {log} = console;
 const Notify = 1; //0为关闭通知，1为打开通知,默认为1
@@ -937,9 +937,9 @@ async function GetRewrite() {
         if (ddgyCk) {
             if (ddgyCk.indexOf(ck) == -1) {
                 ddgyCk = ddgyCk + "@" + ck;
-                $.setdata(ckStr, "ddgyCk");
+                $.setdata(ddgyCk, "ddgyCk");
                 List = ddgyCk.split("@");
-                $.msg($.name + ` 获取第${ddgyCk.length}个 ck 成功: ${ck} ,不用请自行关闭重写!`);
+                $.msg($.name + ` 获取第${List.length}个 ck 成功: ${ck} ,不用请自行关闭重写!`);
             }
         } else {
             $.setdata(ck, "ddgyCk");
