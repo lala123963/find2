@@ -1,13 +1,13 @@
 /**
  作者：shawn
  日期：9.17
- 京东电竞小程序
+ 小程序：JDEsport
  打开我的 抓取域名 jde.dianpusoft.cn 请求头部token值 （目前不知道多久过期先看看）
  变量格式：export jddjCk='111'@'222' 多账户 换行 或者 @ 分割
  每天一次
  Cron：7 7 7 * * *
  [task_local]
- #京东电竞小程序
+ const $ = new Env('京东电竞');
  [rewrite_local]
  https://jde.dianpusoft.cn/c/api/j-user/getUserInfo url script-request-headers https://github.com/Shawn220528/scripts/blob/main/jddj.js
  [MITM]
