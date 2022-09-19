@@ -6,7 +6,7 @@
 如果需要自动抽奖，请设置变量ksfcysDraw为true
 
 青龙捉 club.biqr.cn的任意包，把Token值填到变量ksfcysToken里，多账号@隔开
-
+cron: 8 7 8 * * *
 V2P/圈X 重写：
 点击签到或者我的自动获取
 
@@ -18,8 +18,8 @@ https://club.biqr.cn/api/member/getMemberInfo url script-request-header https://
 [MITM]
 hostname = club.biqr.cn
 */
-const jsname = '康师傅畅饮社'
-const $ = new Env(jsname);
+
+const $ = new Env('康师傅畅饮社');
 const logDebug = 0
 
 const notifyFlag = 1; //0为关闭通知，1为打开通知,默认为1
