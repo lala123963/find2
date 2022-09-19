@@ -19,7 +19,7 @@ https://club.biqr.cn/api/member/getMemberInfo url script-request-header https://
 hostname = club.biqr.cn
 */
 
-const $ = new Env('康师傅畅饮社');
+const $ = new Env('康师傅畅饮社')
 const logDebug = 0
 
 const notifyFlag = 1; //0为关闭通知，1为打开通知,默认为1
