@@ -1,5 +1,10 @@
 /*
-    new Env("苏打校园")
+苏打校园app 或者 苏打智能小程序
+抓包：api.sodalife.xyz  Authorization的值全部
+变量：export suda='Bearer XXXXXXX'
+功能：签到
+收益：每天5-35分递增1500左右兑换
+cron: 7 28 7 * * *
 */
  const $ = Env('苏打校园');
  const notify = $.isNode() ? require('./sendNotify') : '';
