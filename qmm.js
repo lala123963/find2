@@ -40,7 +40,6 @@
 	 debugLog(`【debug】 这是你的账号数组:\n ${ckArr}`);
  }
 
-
  !(async () => {
 	//  console.log("获取公告");
          // await ScriptNotice();
